@@ -18,7 +18,7 @@ class UsuarioDAOImpl implements UsuarioDAO{
 		$result = mysql_query($query,$con);
 		
 		if ($result) {
-			echo "New record created successfully";
+			echo "Nuevo registro agregado exitosamente";
 		} else {
 			echo "Error: " . $result . "<br>" . mysql_error($result);
 		}
