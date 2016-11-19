@@ -73,6 +73,17 @@ body > section,
 .footer {
 	padding: 70px 0;
 }
+/*BOTON VENTA lo de artistas*/
+#btnvnt, #d{
+    background-color: #c80a23 !important; 
+    border: none !important;
+    color: #FFFFFF;
+    /*padding: 10px 21px !important;*/
+    text-align: center !important;
+    text-decoration: none;
+    display: inline-block !important;
+    font-size: 12px !important;
+}
 
 .sec-title {}
 
