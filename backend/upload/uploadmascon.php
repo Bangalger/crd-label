@@ -70,6 +70,7 @@
 		//$campo1 = mysqli_real_escape_string($conexion,$_POST["campo1"]);
 		$biografia = mysqli_real_escape_string($conexion,$_POST["biografia"]);
 		//$campo2 = mysqli_real_escape_string($conexion,$_POST["campo2"]);
+		$biografia_en = mysqli_real_escape_string($conexion,$_POST["biografia_en"]);
 		
 		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA
 		$fotografia = subir_imagen($_FILES["archivo_a_subir"]);
@@ -85,7 +86,7 @@
 
 			// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			$sql = "insert into artistas (nombre_artista, biografia, fotografia) values ('$nombre_artista','$biografia','$fotografia')";
+			$sql = "insert into artistas (nombre_artista, biografia, biografia_en, fotografia) values ('$nombre_artista','$biografia','$biografia_en','$fotografia')";
 			//$sql = "insert into TABLA (campo1, campo2, imagen) values ('$campo1','$campo2','$imagen')";
 			
 			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
@@ -93,6 +94,7 @@
 
 			if(mysqli_query($conexion,$sql)){
 				echo "Los datos se guardaron exitosamente!";
+				echo '<a href="formulario-artistas.php">Volver atras</a>';
 			}
 			else{
 				echo "Error. La consulta a la BBDD no se puede ejecutar.";

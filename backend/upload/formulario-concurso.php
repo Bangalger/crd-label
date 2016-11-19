@@ -15,13 +15,20 @@
 	    	<input type="text" name="titulo" placeholder="Ingresar Titulo del Concurso">
 	    </p>
 	    <p>
+	    	<label>Titulo en Ingles</label>
+	    	<input type="text" name="titulo_en" placeholder="Ingresar Titulo del Concurso en Ingles">
+	    </p>
+	    <p>
 	    	<label>Texto</label>
 	    	<input type="text" name="texto" placeholder="Ingresar Texto">
 	    </p>
-
 	    <p>
-	    	<label>Descripción</label>
-	    	<input type="text" name="descripcion" placeholder="Ingresar Descripción">
+	    	<label>Texto en Ingles</label>
+	    	<input type="text" name="texto_en" placeholder="Ingresar Texto en Ingles">
+	    </p>
+	    <p>
+	    	<label>Descripción en Ingles</label>
+	    	<input type="text" name="descripcion_en" placeholder="Ingresar Descripción en Ingles">
 	    </p>
 
 	    <input type="submit" value="Subir!" name="submit">

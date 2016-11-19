@@ -14,7 +14,10 @@
 	    	<label>Biografia</label>
 	    	<input type="text" name="biografia" placeholder="Ingresar biografia">
 	    </p>
-
+	    <p>
+	    	<label>Biografia Ingles</label>
+	    	<input type="text" name="biografia_en" placeholder="Ingresar biografia en ingles">
+	    </p>
 	    <input type="submit" value="Subir!" name="submit">
 	</form>
 
