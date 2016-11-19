@@ -1,30 +1,6 @@
 <?php
-/*
-class ConnMySql{
-	private $user=	"oy000250_busers";
-	private $passw=	"da72KOvofo";
-	private $host =	"localhost";
-	private $db =	"oy000250_busers";
-	private $con;
-	private $Coneccion;
-
-
-	public function conectar(){
-
-		if(!$this->con = mysql_connect($this->host, $this->user, $this->passw) ){
-			die ('Error al Conectar con servidor mysql:'.mysql_error() );
-			exit();
-		}
-
-		if (!mysql_select_db($this->db)) {
-			die ('ERROR: al seleccionar db:'.mysql_errno().": ".mysql_error().'...');
-			exit();
-		}
-		$this->Coneccion = $this->con;
-		return true;
-	}
-}*/
-	class ConnMySql  // se declara una clase para hacer la conexion con la base de datos
+	class ConnMySql  
+	// se declara una clase para hacer la conexion con la base de datos
 {
 	var $con;
 	

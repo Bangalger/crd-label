@@ -26,7 +26,7 @@ require 'UsuarioDTO.php';
 		$udao = new UsuarioDAOImpl();
 		$udao->insertUsuario($udto);
 		
-		header('Location: http://localhost/afamp/');
+		header('Location: http://crd-label.com.ar/backend/');
 	}
 	
 	if($v2==2){
@@ -34,7 +34,7 @@ require 'UsuarioDTO.php';
 		$udao = new UsuarioDAOImpl();
 		$udao->deleteUsuario($id);
 		
-		header('Location: http://localhost/afamp/');
+		header('Location: http://crd-label.com.ar/backend/');
 	}
 
 	if($v3==3){
@@ -49,7 +49,7 @@ require 'UsuarioDTO.php';
 		$udao = new UsuarioDAOImpl();
 		$udao->updateUsuario($udtoUp, $idu);
 	
-		header('Location: http://localhost/afamp/');
+		header('Location: http://crd-label.com.ar/backend/');
 	}
 
 function getAllFuncionario(){
