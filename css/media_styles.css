@@ -1,0 +1,8 @@
+@media (max-width: 768px){
+	.navbar-brand{
+		padding: 6px 20px;
+	}
+	#nav-user-in{
+		display: none;
+	}
+}
