@@ -78,19 +78,19 @@
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation" id="nav-user-in">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a class="popup" onclick="abrirLogin()">Iniciar Sesion</a></li>
-                        <li><a>Registro</a></li>
+                        <li><a class="popup" onclick="abrirLogin()">Log In</a></li>
+                        <li><a>Sign Up</a></li>
                     </ul>
                 </nav>
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="current"><a href="artistas.php">Artistas</a></li>
-                        <li><a href="lanzamientos.php">Lanzamientos</a></li>
-                        <li><a href="concursos.php">Concursos</a></li>
+                        <li class="current"><a href="artistas.php">Artists</a></li>
+                        <li><a href="lanzamientos.php">Releases</a></li>
+                        <li><a href="concursos.php">Contests</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
                         <li><a href="#">Demos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
@@ -103,12 +103,12 @@
 				<div class="row">
 				
 					<div class="sec-title text-center">
-						<h2>Artistas</h2>
+						<h2>Artists</h2>
 						<!-- aca podria ir el rayito div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 					</div-->
 					
 					<div class="sec-sub-title text-center">
-						<p>Estos son los artistas que integran al sello, te presentamos a nuestra familia</p>
+						<p>These are the artists from our label, we introduce you to our family.</p>
 					</div>
 				</div>
 			</div>
@@ -129,7 +129,6 @@
 						echo '<img src="'.$img.'" alt="">';
 						echo '<figcaption class="overlay">';
 						echo '<a class="fancybox" rel="works" href="'.$img.'"><i class="fa fa-eye fa-lg"></i></a>';
-						//									  href= aca tengo que poner lo artistadale.php.
 						echo '<h4>'.$nom.'</h4>';
 						echo '</figcaption>';
 						echo '</figure>';

@@ -42,6 +42,13 @@
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+<script>
+	// abre el popup cuando se hace click
+		function abrirLogin() {
+    	var popup = document.getElementById('myPopup');
+    	popup.classList.toggle('show');
+    		}
+</script>
 
     </head>
 <body id="body">
@@ -71,7 +78,7 @@
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation" id="nav-user-in">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a>Iniciar Sesion</a></li>
+                        <li><a class="popup" onclick="abrirLogin()">Iniciar Sesion</a></li>
                         <li><a>Registro</a></li>
                     </ul>
                 </nav>

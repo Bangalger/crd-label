@@ -71,10 +71,13 @@
 
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation" id="nav-user-in">
-                    <ul id="nav" class="nav navbar-nav">
+                    
+                    <!-- al ser una pagina donde se muestra info mas detallada y donde se puede comprar, no voy a mostrar aca
+                    el log in ni el sign up, deberia colocar un LOG OUT con un header location a index.html.
+                    ul id="nav" class="nav navbar-nav">
                         <li><a>Iniciar Sesion</a></li>
                         <li><a>Registro</a></li>
-                    </ul>
+                    </ul-->
                 </nav>
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
