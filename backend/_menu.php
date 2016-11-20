@@ -6,7 +6,7 @@ if (!isset($_SESSION['userid'])) { //not logged in
 
     //header("Location: http://localhost/nacho-login/login.php");
     header( "refresh:5; url=index.php" );
-    echo '<p>Inicia sesion! <br> Redireccionando...</p>';
+    echo '<p>Inicia sesion!<br>Redireccionando...</p>';
     die();
     }
 ?>

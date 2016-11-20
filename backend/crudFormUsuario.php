@@ -79,7 +79,7 @@ $result = getAllFuncionario();
 </div>
 
 <div align="center">
-	<a href="menu.php">Volver a Menú</a>
+	<a href="index.php">Volver a Menú</a>
 </div>
 
 </body>

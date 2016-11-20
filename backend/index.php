@@ -30,14 +30,14 @@ echo '<li><a href="upload/formulario-artistas.php">Subir Artista</a></li>';
 echo '<li><a href="upload/formulario-lanzamiento.php">Subir Lanzamiento</a></li>';
 echo '<li><a href="upload/formulario-concurso.php">Concursos (Ver concursos y agregar nuevo concurso)</a></li>';
 echo '<li><a href="#">Mensajes recibidos</a></li>';
-echo '</ul>'
+echo '</ul>';
 echo "<a href='logout.php'>Logout</a>"; 
 }else{
 //3.2 When the user visits the page first time, simple login form will be displayed.
 ?>
 <html>
 <head>
-	<title>User Login Using PHP & MySQL</title>
+	<title>Login</title>
 	
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -63,7 +63,7 @@ echo "<a href='logout.php'>Logout</a>";
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" name="passw" id="inputPassword" class="form-control" placeholder="Contraseña" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-        <a class="btn btn-lg btn-primary btn-block" href="register.php">Register</a>
+        <!--a class="btn btn-lg btn-primary btn-block" href="register.php">Register</a-->
       </form>
 </div>
 

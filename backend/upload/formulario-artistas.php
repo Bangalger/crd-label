@@ -1,12 +1,12 @@
 <?php
 session_start();
-if (!isset($_SESSION['userid'])) { //not logged in
+if (!isset($_SESSION['usuario'])) { //not logged in
 
     //redirect to homepage
 
     //header("Location: http://localhost/nacho-login/login.php");
-    header( "refresh:5; url=index.php" );
-    echo '<p>Inicia sesion! <br> Redireccionando...</p>';
+    header( "refresh:5; url=../index.php" );
+    echo '<p>Inicia sesion!<br>Redireccionando...</p>';
     die();
     }
 ?>
