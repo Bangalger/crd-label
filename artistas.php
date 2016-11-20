@@ -89,7 +89,7 @@
                         <li><a href="lanzamientos.php">Lanzamientos</a></li>
                         <li><a href="concursos.php">Concursos</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
-                        <li><a href="#">Demos</a></li>
+                        <li><a href="demos.php">Demos</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
@@ -128,7 +128,8 @@
 						echo '<figure class="mix work-item web">';
 						echo '<img src="'.$img.'" alt="">';
 						echo '<figcaption class="overlay">';
-						echo '<a class="fancybox" rel="works" href="'.$img.'"><i class="fa fa-eye fa-lg"></i></a>';
+						echo '<a class="fancybox" rel="works" href="artista='.$id.'php"><i class="fa fa-eye fa-lg"></i></a>';
+						
 						//									  href= aca tengo que poner lo artistadale.php.
 						echo '<h4>'.$nom.'</h4>';
 						echo '</figcaption>';

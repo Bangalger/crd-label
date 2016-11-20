@@ -833,3 +833,11 @@ label.error {
     to {opacity:1 ;}
 }
 /*termina el css del pop up*/
+
+#logos{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+  width: 20%;
+  filter: alpha(opacity=50);
+}

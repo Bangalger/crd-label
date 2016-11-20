@@ -89,7 +89,7 @@
                         <li><a href="lanzamiento.php">Lanzamientos</a></li>
                         <li><a href="concursos.php">Concursos</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
-                        <li><a href="#">Demos</a></li>
+                        <li><a href="demos.php">Demos</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>

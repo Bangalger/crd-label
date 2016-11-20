@@ -84,13 +84,13 @@
                 </nav>
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="current"><a href="artistas.php">Artists</a></li>
+                        <li><a href="index_en.html">Home</a></li>
+                        <li class="current"><a href="artistas_en.php">Artists</a></li>
                         <li><a href="lanzamientos.php">Releases</a></li>
-                        <li><a href="concursos.php">Contests</a></li>
+                        <li><a href="concursos_en.php">Contests</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
-                        <li><a href="#">Demos</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="demos_en.php">Demos</a></li>
+                        <li><a href="contacto_en.php">Contact</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->

@@ -113,83 +113,81 @@
             </div>	
             </div>
         </header>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-		
-		
-		
-        <!--
-        Home Slider
-        ==================================== -->
-		
-		<section id="slider">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			
-				<!-- Indicators bullet -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-				<!-- End Indicators bullet -->				
-				
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					
-					<!-- single slide -->
-					<div class="item active" style="background-image: url(img/banner-midu.jpg);">
-						<div class="carousel-caption">
-							<!-- saque el class="carousel-caption" ficha el main.css que es donde se tiene que meter lo de la barra al costado "FIESTA"-->
-							<h2>Remix Midu</h2>
-							<p>Remix his last EP <br> and win prizes!</p>
-						</div>
-					</div>
-					<!-- end single slide -->
-					
-					<!-- single slide -->
-					<div class="item" style="background-image: url(img/banner-narvysan.jpg);">
-						<div class="carousel-caption">
-							<h2>New release</h2>
-							<p>Sanchez Gonzalo & Jonas de Narvaez <br></p>
-						</div>
-					</div>
-					<!-- end single slide -->
 
-					<!-- single slide -->
-					<div class="item" style="background-image: url(img/crdvinilo03.jpg);">
-						<div class="carousel-caption">
-							<h2>New Vinyl</h2>
-							<p>It has 4 songs that cover the different<br>parts of House Music that we like</p>
+			<section id="contact" class="contact">
+						<div class="container">
+							<div class="row mb50">
+							
+								<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms" style="margin-top:50px">
+									<h2>Send us your music!</h2>
+									<div class="devider"></i></div>
+								</div>
+								
+								<div class="sec-sub-title text-center wow fadeInDown animated" data-wow-duration="1000ms">
+									<p>Please upload your demos via this page and somebody will come back to you as soon as possible.</p>
+								</div>
+								
+								<!-- contact address -->
+								
+								<!-- end contact address -->
+								
+								<!-- contact form -->
+								<div class="col-lg-12 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+									<div class="contact-form">
+										<h3>Form</h3>
+										<form action="#" id="contact-form">
+											<div class="input-group name-email">
+												<div class="input-field">
+													<input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+												</div>
+												<div class="input-field">
+													<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+												</div>
+											</div>
+											<div class="input-group">
+												<textarea name="message" id="message" placeholder="Mensaje" class="form-control"></textarea>
+											</div>
+											<div class="input-group">
+												<textarea name="linkdemo" id="message" placeholder="Coloca el link de tu demo (Dropbox, Wetransfer, Mediafire..)" class="form-control"></textarea>
+											</div>
+											<div class="input-group">
+												<input type="submit" class="pull-right" value="Enviar">
+											</div>
+										</form>
+									</div>
+								</div>
+								<!-- end contact form fichar que es lo que tiene id="form-submit", por lo del css -->
 
-							 
-						</div>
-					</div>
-					<!-- end single slide -->
-					
-				</div>
-				<!-- End Wrapper for slides -->
-				
-			</div>
+								
+								<!-- footer social links -->
+								<div class="col-lg-12 col-md-8 col-sm-7 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms" style="text-align: center;">
+									<img id="logos" src="img/logos.png">
+								</div>
+								<!-- end footer social links -->
+								
+							</div>
+						</div>			
 		</section>
+
 		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="row">
 				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" style="text-align:center;">
 						<div class="footer-single">
 							<!--img src="img/footer-logo.png" alt=""-->
-							<a href="index.html">ES</a>
-							<a href="index_en.html">/EN</a>
+							<h6>Idioma</h6>
+							<a href="demos.php">ES</a>
+							<a href="demos_en.php">/EN</a>
 						</div>
 					</div>
 				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms" style="text-align:center;">
 						<script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/2/format/widget">
 						</script>
 					</div>
 				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms" style="text-align:center;">
 						<div class="footer-single">
 							<h6>Seguinos</h6>
 							<ul>
@@ -198,9 +196,6 @@
 								<li><a href="#">Google+</a></li>
 							</ul>
 						</div>
-					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					</div>
 					
 				</div>
@@ -257,7 +252,64 @@
 			wow.init();
 		</script> 
 		<!-- Custom Functions -->
-        <script src="js/custom.js"></script>
+        
+
+        <script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "¡Este campo es obligatorio!",
+							minlength: "Tu nombre es mas de dos caracteres."
+						},
+						email: {
+							required: "Sin email, no podemos contactarte."
+						},
+						message: {
+							required: "Deberias escribir algo aca.",
+							minlength: "¿Solamente eso?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
 		
     </body>
 </html>

@@ -90,7 +90,7 @@
                         <li><a href="lanzamientos.php">Lanzamientos</a></li>
                         <li><a href="concursos.php">Concursos</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
-                        <li><a href="#">Demos</a></li>
+                        <li><a href="demos.php">Demos</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
@@ -161,7 +161,7 @@
 								
 								<!-- footer social links -->
 								<div class="col-lg-12 col-md-8 col-sm-7 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms" style="text-align: center;">
-									<p>Aca voy a poner los logos del sello y del subsello grisaceos.</p>
+									<img id="logos" src="img/logos.png">
 								</div>
 								<!-- end footer social links -->
 								
