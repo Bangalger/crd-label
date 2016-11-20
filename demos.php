@@ -9,11 +9,11 @@
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<!-- Page Title -->
-       <title>Club Rayo Disquets</title>		
+        <title>Club Rayo Disquets</title>		
 		<!-- Meta Description -->
-        <meta name="description" content="Sitio Web de Club Rayo Disquets">
-        <meta name="keywords" content="crd, club, rayo, disquets, argentina, music, techno, house, deep house, tech-house, progressive house, label">
-        <meta name="author" content="German R. Figueroa">
+        <meta name="description" content="Sitio web del sello Club Rayo Disquets">
+        <meta name="keywords" content="argentina, musica, music, label, crd, techno, house, deep house, progressive house, record label">
+        <meta name="author" content="German R Figueroa">
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -42,7 +42,7 @@
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
-        <script>
+<script>
 	// abre el popup cuando se hace click
 		function abrirLogin() {
     	var popup = document.getElementById('myPopup');
@@ -51,9 +51,10 @@
 </script>
 
     </head>
-<body id="body">
-
- <!-- 
+	
+    <body id="body">
+	
+        <!-- 
         Fixed Navigation
         ==================================== -->
         <header id="navigation" class="navbar-fixed-top navbar">
@@ -84,8 +85,8 @@
                 </nav>
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="current"><a href="artistas.php">Artistas</a></li>
+                        <li class="current"><a href="#body">Home</a></li>
+                        <li><a href="artistas.php">Artistas</a></li>
                         <li><a href="lanzamientos.php">Lanzamientos</a></li>
                         <li><a href="concursos.php">Concursos</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
@@ -94,81 +95,99 @@
                     </ul>
                 </nav>
 				<!-- /main nav -->
-				
+
+		<div id="formulario" class="extradelfrom">
+				<form  action="#" method="POST" class="popuptext" id="myPopup">
+                    <label for="usuario">Usuario: </label>
+                    <br/>
+                    <input id=""  type="text" name="usuario" >
+                    <br/>
+                    <label for="clave">Clave: </label>
+                    <br>
+                    <input id=""  type="text" name="clave" >
+                    <br/>
+                    <br/>
+                    <input  type="submit" value="INGRESAR" />
+				</form>
+
+            </div>	
             </div>
         </header>
 
-<section id="works" class="works clearfix">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center">
-						<h2>Artistas</h2>
-						<!-- aca podria ir el rayito div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-					</div-->
-					
-					<div class="sec-sub-title text-center">
-						<p>Estos son los artistas que integran al sello, te presentamos a nuestra familia</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="project-wrapper">
-				<?php
-				if( $conexion = mysqli_connect("localhost","oy000250_crd","da72KOvofo","oy000250_crd")){
-					$consulta = "SELECT * FROM artistas";
-					$resultado = mysqli_query($conexion,$consulta);
-					//no agarre lo del ul, no lo voy a hacer
-					while($fila = mysqli_fetch_array($resultado)){
-						$id = $fila["id_artista"];
-						$img = $fila["fotografia"];
-						$nom= $fila["nombre_artista"];
-						//echo $img;
+			<section id="contact" class="contact">
+						<div class="container">
+							<div class="row mb50">
+							
+								<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms" style="margin-top:50px">
+									<h2>Envianos tu música</h2>
+									<div class="devider"></i></div>
+								</div>
+								
+								<div class="sec-sub-title text-center wow fadeInDown animated" data-wow-duration="1000ms">
+									<p>Por favor, envianos tu música a traves de esta página y alguien va a contactarte.</p>
+								</div>
+								
+								<!-- contact address -->
+								
+								<!-- end contact address -->
+								
+								<!-- contact form -->
+								<div class="col-lg-12 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+									<div class="contact-form">
+										<h3>Formulario</h3>
+										<form action="#" id="contact-form">
+											<div class="input-group name-email">
+												<div class="input-field">
+													<input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+												</div>
+												<div class="input-field">
+													<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+												</div>
+											</div>
+											<div class="input-group">
+												<textarea name="message" id="message" placeholder="Mensaje" class="form-control"></textarea>
+											</div>
+											<div class="input-group">
+												<textarea name="linkdemo" id="message" placeholder="Coloca el link de tu demo (Dropbox, Wetransfer, Mediafire..)" class="form-control"></textarea>
+											</div>
+											<div class="input-group">
+												<input type="submit" class="pull-right" value="Enviar">
+											</div>
+										</form>
+									</div>
+								</div>
+								<!-- end contact form fichar que es lo que tiene id="form-submit", por lo del css -->
 
-						echo '<figure class="mix work-item web">';
-						echo '<img src="'.$img.'" alt="">';
-						echo '<figcaption class="overlay">';
-						echo '<a class="fancybox" rel="works" href="'.$img.'"><i class="fa fa-eye fa-lg"></i></a>';
-						//									  href= aca tengo que poner lo artistadale.php.
-						echo '<h4>'.$nom.'</h4>';
-						echo '</figcaption>';
-						echo '</figure>';
-						}
-					}else{
-						echo "<p>andateeeee</p>";
-						}
-
-				?>
-				<!--figure class="mix work-item web">
-					<img src="img/artistas/gustavobonani.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" href="img/artistas/gustavobonani.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Gustavo Bonani</h4>
-						<p>Buenos Aires</p>
-					</figcaption>
-				</figure-->
-			</div>
-		
-
+								
+								<!-- footer social links -->
+								<div class="col-lg-12 col-md-8 col-sm-7 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms" style="text-align: center;">
+									<p>Aca voy a poner los logos del sello y del subsello grisaceos.</p>
+								</div>
+								<!-- end footer social links -->
+								
+							</div>
+						</div>			
 		</section>
+
 		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="row">
 				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" style="text-align:center;">
 						<div class="footer-single">
 							<!--img src="img/footer-logo.png" alt=""-->
-							<a href="artistas.php">ES</a>
-							<a href="artistas_en.php">/EN</a>
+							<h6>Idioma</h6>
+							<a href="index.html">ES</a>
+							<a href="index_en.html">/EN</a>
 						</div>
 					</div>
 				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms" style="text-align:center;">
 						<script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/2/format/widget">
 						</script>
 					</div>
 				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms" style="text-align:center;">
 						<div class="footer-single">
 							<h6>Seguinos</h6>
 							<ul>
@@ -177,9 +196,6 @@
 								<li><a href="#">Google+</a></li>
 							</ul>
 						</div>
-					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					</div>
 					
 				</div>
@@ -192,9 +208,12 @@
 				</div>
 			</div>
 		</footer>
-
-
-<!-- Essential jQuery Plugins
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+		
+		<!-- Essential jQuery Plugins
 		================================================== -->
 		<!-- Main jQuery -->
         <script src="js/jquery-1.11.1.min.js"></script>
@@ -230,13 +249,67 @@
 				live:         true        // act on asynchronously loaded content (default is true)
 			  }
 			);
-			wow.init();	
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        
 
-</script> 
-<!-- Custom Functions -->
-<script src="js/custom.js"></script>
-
-
-
-</body>
+        <script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "¡Este campo es obligatorio!",
+							minlength: "Tu nombre es mas de dos caracteres."
+						},
+						email: {
+							required: "Sin email, no podemos contactarte."
+						},
+						message: {
+							required: "Deberias escribir algo aca.",
+							minlength: "¿Solamente eso?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+		
+    </body>
 </html>

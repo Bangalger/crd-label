@@ -204,6 +204,48 @@
 				</div>
 			</div>
 		</section>
+
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="footer-single">
+							<!--img src="img/footer-logo.png" alt=""-->
+							<a href="concursos.php">ES</a>
+							<a href="concursos_en.php">/EN</a>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/2/format/widget">
+						</script>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="footer-single">
+							<h6>Seguinos</h6>
+							<ul>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Instagram</a></li>
+								<li><a href="#">Google+</a></li>
+							</ul>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright text-center">
+							Copyright © 2016 <a href="#">Club Rayo Disquets</a>. All rights reserved. Designed & developed by <a href="#">Germán Figueroa</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 		
         <!--
         End Home SliderEnd
