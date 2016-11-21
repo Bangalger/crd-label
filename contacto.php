@@ -11,9 +11,9 @@
 		<!-- Page Title -->
         <title>Club Rayo Disquets</title>		
 		<!-- Meta Description -->
-        <meta name="description" content="Sitio Web de Club Rayo Disquets">
-        <meta name="keywords" content="crd, club, rayo, disquets, argentina, music, techno, house, deep house, tech-house, progressive house, label">
-        <meta name="author" content="German R. Figueroa">
+        <meta name="description" content="Sitio web del sello Club Rayo Disquets">
+        <meta name="keywords" content="argentina, musica, music, label, crd, techno, house, deep house, progressive house, record label">
+        <meta name="author" content="German R Figueroa">
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -42,6 +42,13 @@
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+<script>
+	// abre el popup cuando se hace click
+		function abrirLogin() {
+    	var popup = document.getElementById('myPopup');
+    	popup.classList.toggle('show');
+    		}
+</script>
 
     </head>
 	
@@ -71,13 +78,10 @@
 
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation" id="nav-user-in">
-                    
-                    <!-- al ser una pagina donde se muestra info mas detallada y donde se puede comprar, no voy a mostrar aca
-                    el log in ni el sign up, deberia colocar un LOG OUT con un header location a index.html.
-                    ul id="nav" class="nav navbar-nav">
-                        <li><a>Iniciar Sesion</a></li>
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a class="popup" onclick="abrirLogin()">Iniciar Sesion</a></li>
                         <li><a>Registro</a></li>
-                    </ul-->
+                    </ul>
                 </nav>
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
@@ -91,96 +95,71 @@
                     </ul>
                 </nav>
 				<!-- /main nav -->
-				
+
+		<div id="formulario" class="extradelfrom">
+				<form  action="#" method="POST" class="popuptext" id="myPopup">
+                    <label for="usuario">Usuario: </label>
+                    <br/>
+                    <input id=""  type="text" name="usuario" >
+                    <br/>
+                    <label for="clave">Clave: </label>
+                    <br>
+                    <input id=""  type="text" name="clave" >
+                    <br/>
+                    <br/>
+                    <input  type="submit" value="INGRESAR" />
+				</form>
+
+            </div>	
             </div>
         </header>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-		
-		
-		
-        <!--
-        Home Slider
-        ==================================== -->
-		
-		<section id="slider">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			
-				<!-- Indicators bullet -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-				<!-- End Indicators bullet -->				
-				
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					
-					<!-- single slide -->
-					<div class="item active" style="background-image: url(backend/upload/img/lanzamientos/daiz_portada.jpg);">
-						<div class="carousel-caption">
-							<!-- saque el class="carousel-caption" ficha el main.css que es donde se tiene que meter lo de la barra al costado "FIESTA"-->
-							<!--h2>Remixa a Midu</h2>
-							<p>Reversiona su ultimo EP <br>y participa por premios</p-->
-						</div>
-					</div>
-					<!-- end single slide -->
-					
-					
 
-					
-					
-				</div>
-				<!-- End Wrapper for slides -->
-				
-			</div>
-		</section>
-		
-        <!--
-        End Home SliderEnd
-        ==================================== -->
-
-        <section id="contact" class="contact">
-			<div class="container">
-				<div class="row mb50">
-					
-					<!-- contact address -->
-					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 colorn wow fadeInLeft animated" data-wow-duration="500ms">
-						<div class="contact-address">
-							<h3>LOST MY SOUL</h3>
-							<h2>DAIZ</h2>
-							<img class="imgart" src="backend/upload/img/artistas/juanantoniodeep.jpg">
-						</div>
-					</div>
-					<!-- end contact address -->
-					
-					<!-- contact form -->
-					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 extrapadding colorn wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
-						<div class="contact-form">
-							<h3>BIO</h3>
-							<p>Con años 17 y medio de edad, logró sumergido en la zona de discotecas de su ciudad natal, Bariloche, situado en la Patagonia Argentina y hoy se presenta a sí mismo en los lugares más representativos de la escena de la Patagonia y Buenos Aires de la ciudad. Algunos dicen que es uno de los nuevos talentos de la música electrónica underground de Argentina, junto con su socio cercano; Dani Labb.
-Él se las arregló para compartir escenario con Jimmy Van M, Nico Cano, Lucianno Villarreal, Lolu Menayed y Lucas Ferro.
-La música que hace ha recibido el apoyo de dj de todo el mundo tales como Neverdogs, Massimo Cassini, Reelow, Mihai Popoviciu, Wally Stryk, Stacey Pullen, Matheo Vélez, David Museen, Stefano Noferini, Neverdogs, Miguel Lobo, Jimmy Van M, y está recibiendo constantemente el apoyo de los artistas argentinos nacionales Jonas de Narvaez, Bs As profundo, Gruuve y Lolu Menayed.
-Compañías discográficas: Deep Disco Music, Deep Sense Records, Onward Recordings, Hermine Records, Boutade Musique, MUUV, SAMANI.</p> 
+			<section id="contact" class="contact">
+						<div class="container">
+							<div class="row mb50">
 							
-						</div>
-					</div>
-					<!-- end contact form -->
-					<div class="col-lg-12 md-mt-20">
-					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/200244062&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-					</div>
+								<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms" style="margin-top:50px">
+									<h2>Contactanos</h2>
+									<div class="devider"></i></div>
+								</div>
+								
+								<div class="sec-sub-title text-center wow fadeInDown animated" data-wow-duration="1000ms">
+									<p>Cualquier mensaje es bienvenido, ¡mostranos tu apoyo!</p>
+								</div>
+								
+								<!-- contact address -->
+								
+								<!-- end contact address -->
+								
+								<!-- contact form -->
+								<div class="col-lg-12 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms" style="text-align: center;">
+									<div class="contact-form">
+										<h3>Formulario</h3>
+										<form action="#" id="contact-form">
+											<div class="input-field">
+												<input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+											</div>
 
-					<div class="col-lg-12 md-mt-20" align="center"> 
-						<button id="btnvnt" type="button"><a id="d" href="http://crd-label.com.ar/ventas/index.php?route=product/product&path=60&product_id=59" target="_blank">Comprar $1.99</a></button> 
-					</div>
-				</div>
-			</div>
-					
-</section>
+											<div class="input-field">
+												<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+											</div>
 
-<footer id="footer" class="footer">
+											<div class="input-field">
+												<textarea name="message" id="message" placeholder="Mensaje" class="form-control"></textarea>
+											</div>
+											<div class="input-group">
+												<input type="submit" class="pull-left" value="Enviar">
+											</div>
+
+										</form>
+									</div>
+								</div>
+								<!-- end contact form fichar que es lo que tiene id="form-submit", por lo del css -->				
+							</div>
+						</div>			
+		</section>
+
+		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="row">
 				
@@ -188,8 +167,8 @@ Compañías discográficas: Deep Disco Music, Deep Sense Records, Onward Recordi
 						<div class="footer-single">
 							<!--img src="img/footer-logo.png" alt=""-->
 							<h6>Idioma</h6>
-							<a href="artista=1.php">ES</a>
-							<a href="artista=1_en.php">/EN</a>
+							<a href="index.html">ES</a>
+							<a href="index_en.html">/EN</a>
 						</div>
 					</div>
 				
@@ -219,8 +198,10 @@ Compañías discográficas: Deep Disco Music, Deep Sense Records, Onward Recordi
 				</div>
 			</div>
 		</footer>
-
-        
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
 		
 		<!-- Essential jQuery Plugins
 		================================================== -->
@@ -261,7 +242,64 @@ Compañías discográficas: Deep Disco Music, Deep Sense Records, Onward Recordi
 			wow.init();
 		</script> 
 		<!-- Custom Functions -->
-        <script src="js/custom.js"></script>
+        
+
+        <script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "¡Este campo es obligatorio!",
+							minlength: "Tu nombre es mas de dos caracteres."
+						},
+						email: {
+							required: "Sin email, no podemos contactarte."
+						},
+						message: {
+							required: "Deberias escribir algo aca.",
+							minlength: "¿Solamente eso?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
 		
     </body>
 </html>

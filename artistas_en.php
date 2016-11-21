@@ -128,7 +128,7 @@
 						echo '<figure class="mix work-item web">';
 						echo '<img src="'.$img.'" alt="">';
 						echo '<figcaption class="overlay">';
-						echo '<a class="fancybox" rel="works" href="'.$img.'"><i class="fa fa-eye fa-lg"></i></a>';
+						echo '<a class="fancybox" rel="works" href="artista='.$id.'_en.php"><i class="fa fa-eye fa-lg"></i></a>';
 						echo '<h4>'.$nom.'</h4>';
 						echo '</figcaption>';
 						echo '</figure>';
