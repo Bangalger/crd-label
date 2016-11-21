@@ -94,6 +94,21 @@
                     </ul>
                 </nav>
 				<!-- /main nav -->
+				<div id="formulario" class="extradelfrom">
+				<form  action="#" method="POST" class="popuptext" id="myPopup">
+                    <label for="usuario">Usuario: </label>
+                    <br/>
+                    <input id=""  type="text" name="usuario" >
+                    <br/>
+                    <label for="clave">Clave: </label>
+                    <br>
+                    <input id=""  type="text" name="clave" >
+                    <br/>
+                    <br/>
+                    <input  type="submit" value="INGRESAR" />
+				</form>
+
+            </div>
 				
             </div>
         </header>

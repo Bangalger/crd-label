@@ -86,7 +86,7 @@
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li class="current"><a href="artistas.php">Artistas</a></li>
-                        <li><a href="lanzamiento.php">Lanzamientos</a></li>
+                        <li><a href="lanzamientos.php">Lanzamientos</a></li>
                         <li><a href="concursos.php">Concursos</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
                         <li><a href="demos.php">Demos</a></li>
@@ -94,6 +94,21 @@
                     </ul>
                 </nav>
 				<!-- /main nav -->
+				<div id="formulario" class="extradelfrom">
+				<form  action="#" method="POST" class="popuptext" id="myPopup">
+                    <label for="usuario">Usuario: </label>
+                    <br/>
+                    <input id=""  type="text" name="usuario" >
+                    <br/>
+                    <label for="clave">Clave: </label>
+                    <br>
+                    <input id=""  type="text" name="clave" >
+                    <br/>
+                    <br/>
+                    <input  type="submit" value="INGRESAR" />
+				</form>
+
+            </div>
 				
             </div>
         </header>

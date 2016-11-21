@@ -85,13 +85,13 @@
                 </nav>
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#body">Home</a></li>
+                        <li class="current"><a href="index.html">Home</a></li>
                         <li><a href="artistas.php">Artistas</a></li>
                         <li><a href="lanzamientos.php">Lanzamientos</a></li>
                         <li><a href="concursos.php">Concursos</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
                         <li><a href="demos.php">Demos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="contacto.php">Contacto</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
@@ -167,8 +167,8 @@
 						<div class="footer-single">
 							<!--img src="img/footer-logo.png" alt=""-->
 							<h6>Idioma</h6>
-							<a href="index.html">ES</a>
-							<a href="index_en.html">/EN</a>
+							<a href="contacto.php">ES</a>
+							<a href="contacto_en.php">/EN</a>
 						</div>
 					</div>
 				

@@ -85,16 +85,31 @@
                 </nav>
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#body">Home</a></li>
+                        <li class="current"><a href="index_en.html">Home</a></li>
                         <li><a href="artistas_en.php">Artists</a></li>
                         <li><a href="lanzamientos.php">Releases</a></li>
                         <li><a href="concursos_en.php">Contests</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
                         <li><a href="demos_en.php">Demos</a></li>
-                        <li><a href="contacto_en">Contact</a></li>
+                        <li><a href="contacto_en.php">Contact</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
+				<div id="formulario" class="extradelfrom">
+				<form  action="#" method="POST" class="popuptext" id="myPopup">
+                    <label for="usuario">User: </label>
+                    <br/>
+                    <input id=""  type="text" name="usuario" >
+                    <br/>
+                    <label for="clave">Password: </label>
+                    <br>
+                    <input id=""  type="text" name="clave" >
+                    <br/>
+                    <br/>
+                    <input  type="submit" value="INGRESAR" />
+				</form>
+
+            </div>
 				
             </div>
         </header>
@@ -224,7 +239,7 @@
 				
 					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
 						<div class="footer-single">
-							<h6>Follow Us</h6>
+							<h6>Seguinos</h6>
 							<ul>
 								<li><a href="#">Facebook</a></li>
 								<li><a href="#">Instagram</a></li>

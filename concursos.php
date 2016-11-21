@@ -79,22 +79,37 @@
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation" id="nav-user-in">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a class="popup" onclick="abrirLogin()">Log In</a></li>
-                        <li><a>Sign In</a></li>
+                        <li><a class="popup" onclick="abrirLogin()">Iniciar Sesion</a></li>
+                        <li><a>Registro</a></li>
                     </ul>
                 </nav>
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="artistas_en.php">Artists</a></li>
-                        <li><a href="lanzamientos.php">Releases</a></li>
-                        <li><a href="concursos_en.php">Contests</a></li>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="artistas.php">Artistas</a></li>
+                        <li><a href="lanzamientos.php">Lanzamientos</a></li>
+                        <li><a href="concursos.php">Concursos</a></li>
                         <li><a href="http://crd-label.com.ar/ventas/">Shop</a></li>
                         <li><a href="demos.php">Demos</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contacto.php">Contacto</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
+				<div id="formulario" class="extradelfrom">
+				<form  action="#" method="POST" class="popuptext" id="myPopup">
+                    <label for="usuario">Usuario: </label>
+                    <br/>
+                    <input id=""  type="text" name="usuario" >
+                    <br/>
+                    <label for="clave">Clave: </label>
+                    <br>
+                    <input id=""  type="text" name="clave" >
+                    <br/>
+                    <br/>
+                    <input  type="submit" value="INGRESAR" />
+				</form>
+
+            </div>
 				
             </div>
         </header>
@@ -224,7 +239,7 @@
 				
 					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
 						<div class="footer-single">
-							<h6>Seguinos</h6>
+							<h6>Follow Us</h6>
 							<ul>
 								<li><a href="#">Facebook</a></li>
 								<li><a href="#">Instagram</a></li>
